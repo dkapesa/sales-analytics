@@ -59,11 +59,11 @@ The results provide a foundation for **data-driven decision-making**, helping th
 
 | **Segment** | **Customers** | **Avg CLV ($)** | **Total CLV ($)** | **Avg Expected Purchases** |
 |--------------|---------------|------------------|-------------------|-----------------------------|
-| 🥇 Loyal Customers | 266 | 4.13 | 1,098.78 | 0.0008 |
-| 🌱 Potential Loyalists | 288 | 3.11 | 896.99 | 0.0006 |
-| 💎 Champions | 130 | 5.80 | 753.59 | 0.0011 |
-| ⚠️ At Risk | 104 | 2.05 | 213.17 | 0.0004 |
-| 🕳 Lost | 14 | 1.69 | 23.70 | 0.0003 |
+| Loyal Customers | 266 | 4.13 | 1,098.78 | 0.0008 |
+| Potential Loyalists | 288 | 3.11 | 896.99 | 0.0006 |
+| Champions | 130 | 5.80 | 753.59 | 0.0011 |
+| At Risk | 104 | 2.05 | 213.17 | 0.0004 |
+| Lost | 14 | 1.69 | 23.70 | 0.0003 |
 
 **Key Takeaways:**
 - Top 20% of customers generate **~65% of total revenue**
@@ -75,22 +75,22 @@ The results provide a foundation for **data-driven decision-making**, helping th
 ### 📊 Visualisations
 
 Included in the PDF report:
-- 📈 **Revenue Trend Over Time**  
-- 💰 **Top 10 Customers by Total Spend**  
-- 📉 **Revenue Distribution Histogram**  
-- 💹 **Profit Margin vs Total Spend Scatterplot**  
-- 🎯 **RFM Segment Heatmap**  
-- 🌀 **K-Means Cluster (PCA) Visualisation**  
-- 💵 **CLV Distribution by Segment (180 Days)**  
+- **Revenue Trend Over Time**  
+- **Top 10 Customers by Total Spend**  
+- **Revenue Distribution Histogram**  
+- **Profit Margin vs Total Spend Scatterplot**  
+- **RFM Segment Heatmap**  
+- **K-Means Cluster (PCA) Visualisation**  
+- **CLV Distribution by Segment (180 Days)**  
 
 
 ### 💡 Business Insights
 
-- 🧩 Retaining **Loyal** and **Champion** customers delivers the highest ROI  
-- 🌱 Invest in **Potential Loyalists** via loyalty rewards and email campaigns  
-- ⚠️ Target **At-Risk** customers with time-sensitive offers  
-- 💰 Optimise **profit margins** among high-spending but low-profit buyers  
-- 📊 Use CLV insights to guide **marketing spend allocation** and **customer lifetime strategies**
+- Retaining **Loyal** and **Champion** customers delivers the highest ROI  
+- Invest in **Potential Loyalists** via loyalty rewards and email campaigns  
+- Target **At-Risk** customers with time-sensitive offers  
+- Optimise **profit margins** among high-spending but low-profit buyers  
+- Use CLV insights to guide **marketing spend allocation** and **customer lifetime strategies**
 
 
 ### 🧰 Tech Stack
@@ -104,11 +104,11 @@ Included in the PDF report:
 | **Reporting** | PDF Report |
 
 
-### 🚀 Future Work
+### Future Work
 
-- 🔄 Automate CLV refresh pipeline using **batch ETL (Airflow / dbt)**  
-- 🧠 Extend analysis to **predict churn probability**  
-- 📈 Integrate **marketing and campaign attribution** data  
-- 🖥 Deploy **interactive BI dashboard (Looker / Tableau)**
+- Automate CLV refresh pipeline using **batch ETL (Airflow / dbt)**  
+- Extend analysis to **predict churn probability**  
+- Integrate **marketing and campaign attribution** data  
+- Deploy **interactive BI dashboard (Looker / Tableau)**
 
 🔗 Link to the dataset: https://www.opendatabay.com/data/consumer/7b291337-5fed-470f-a206-0dc899425db4
