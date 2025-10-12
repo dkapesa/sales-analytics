@@ -1,13 +1,11 @@
 # 🧩 Customer Segmentation & Lifetime Value Prediction for a Retail Business
 
----
 
 ### 📘 Executive Summary
 This project analyses **five years of retail transaction data (March 2020 – March 2025)** to segment customers and forecast their **Customer Lifetime Value (CLV)**.  
 Using advanced statistical modelling and segmentation techniques, it identifies which customers drive the most value, which are at risk of churn, and how to tailor marketing and retention strategies accordingly.  
 The results provide a foundation for **data-driven decision-making**, helping the business maximise revenue and customer loyalty.
 
----
 
 ### 📊 Dataset Overview
 
@@ -29,7 +27,6 @@ The results provide a foundation for **data-driven decision-making**, helping th
 **Data Period:** March 2020 – March 2025  
 **Records:** 1,194 | **Customers:** 802 | **Categories:** 3 | **Sub-Categories:** 12  
 
----
 
 ### 🧠 Methodology
 
@@ -57,7 +54,6 @@ The results provide a foundation for **data-driven decision-making**, helping th
    - Quantified segment-level revenue contribution  
    - Prioritised retention, reactivation, and growth strategies  
 
----
 
 ### 📈 Key Results
 
@@ -75,7 +71,6 @@ The results provide a foundation for **data-driven decision-making**, helping th
 - **Potential Loyalists** show strong opportunity for growth  
 - **At-Risk** and **Lost** customers need targeted reactivation strategies  
 
----
 
 ### 📊 Visualisations
 
@@ -88,7 +83,6 @@ Included in the PDF report:
 - 🌀 **K-Means Cluster (PCA) Visualisation**  
 - 💵 **CLV Distribution by Segment (180 Days)**  
 
----
 
 ### 💡 Business Insights
 
@@ -98,7 +92,6 @@ Included in the PDF report:
 - 💰 Optimise **profit margins** among high-spending but low-profit buyers  
 - 📊 Use CLV insights to guide **marketing spend allocation** and **customer lifetime strategies**
 
----
 
 ### 🧰 Tech Stack
 
@@ -110,7 +103,6 @@ Included in the PDF report:
 | **Version Control** | GitHub |
 | **Reporting** | PDF Report |
 
----
 
 ### 🚀 Future Work
 
@@ -119,7 +111,6 @@ Included in the PDF report:
 - 📈 Integrate **marketing and campaign attribution** data  
 - 🖥 Deploy **interactive BI dashboard (Looker / Tableau)**  
 
----
 
 ### ⚙️ Production Scalability Note
 This CLV and segmentation framework can be deployed in production for continuous insight generation:
