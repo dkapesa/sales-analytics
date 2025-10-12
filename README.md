@@ -24,46 +24,30 @@ Records: 1,194 | Customers: 802 | Categories: 3 | Sub-Categories: 12
 
 🧠 Methodology
 1. Exploratory Data Analysis (EDA)
-
-Analysed total customers and revenue trends
-
-Identified top 10 high-value customers
-
-Visualised distribution of revenue and profit margin vs total spend
-
-Highlighted skewed revenue concentration among a small elite group
+- Analysed total customers and revenue trends
+- Identified top 10 high-value customers
+- Visualised distribution of revenue and profit margin vs total spend
+- Highlighted skewed revenue concentration among a small elite group
 
 2. Feature Engineering
-
-Derived RFM (Recency, Frequency, Monetary) metrics
-
-Calculated TotalProfit, Average Order Value (AOV), and Profit Margin
-
-Standardised metrics for modelling
+- Derived RFM (Recency, Frequency, Monetary) metrics
+- Calculated TotalProfit, Average Order Value (AOV), and Profit Margin
+- Standardised metrics for modelling
 
 3. Customer Segmentation
-
-Applied RFM quantile scoring (Champions, Loyal, Potential Loyalists, At Risk, Lost)
-
-Performed K-Means clustering for deeper behavioural patterns
-
-Visualised clusters via PCA for interpretability
+- Applied RFM quantile scoring (Champions, Loyal, Potential Loyalists, At Risk, Lost)
+- Performed K-Means clustering for deeper behavioural patterns
+- Visualised clusters via PCA for interpretability
 
 4. CLV Modelling
-
-Fitted BG/NBD model for expected repeat purchases (180-day horizon)
-
-Integrated Gamma-Gamma model (where applicable) for order value estimation
-
-Aggregated CLV results by segment for actionable business insights
+- Fitted BG/NBD model for expected repeat purchases (180-day horizon)
+- Integrated Gamma-Gamma model (where applicable) for order value estimation
+- Aggregated CLV results by segment for actionable business insights
 
 5. Insights & Recommendations
-
-Prioritised Champions and Loyal Customers for retention investment
-
-Identified Potential Loyalists as scalable growth opportunities
-
-Recommended low-cost automation for reactivating at-risk segments
+- Prioritised Champions and Loyal Customers for retention investment
+- Identified Potential Loyalists as scalable growth opportunities
+- Recommended low-cost automation for reactivating at-risk segments
 
 📈 Key Results
 Segment	Customers	Avg CLV ($)	Total CLV ($)	Avg Expected Purchases
@@ -74,14 +58,10 @@ At Risk	104	2.05	213.17	0.0004
 Lost	14	1.69	23.70	0.0003
 
 Key Findings:
-
-Most customers are single-purchase buyers, limiting short-term CLV.
-
-Loyal Customers and Champions drive the largest revenue and CLV contribution.
-
-Potential Loyalists are the largest cohort and the best opportunity for scalable growth.
-
-High spend ≠ high profit margin, indicating opportunity for margin optimisation.
+- Most customers are single-purchase buyers, limiting short-term CLV.
+- Loyal Customers and Champions drive the largest revenue and CLV contribution.
+- Potential Loyalists are the largest cohort and the best opportunity for scalable growth.
+- High spend ≠ high profit margin, indicating opportunity for margin optimisation.
 
 📊 Visualisations (Included in Report)
 
