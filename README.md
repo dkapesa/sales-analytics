@@ -1,12 +1,19 @@
-🧩 Customer Segmentation and Lifetime Value Modelling in Retail
+🧩 Customer Segmentation & Lifetime Value Prediction for a Retail Business
 📘 Project Overview
 
-This project analyses five years of retail transaction data (2020–2025) to segment customers and estimate their Customer Lifetime Value (CLV) using interpretable, business-oriented analytics. The objective is to identify high-value customer groups, forecast their future revenue potential, and generate actionable recommendations for retention, upselling, and marketing prioritisation.
+This project analyses five years of retail transaction data (2020–2025) to segment customers and forecast their Customer Lifetime Value (CLV).
+The goal is to help the business optimise marketing, retention, and profitability by identifying:
 
-The full project was implemented in Python (Google Colab) and documented in a comprehensive report available in the repository.
+Which customers generate the most value 💰
+
+Which are most likely to churn ⚠️
+
+How to target each segment efficiently 🎯
+
+The project was implemented in Python (Google Colab) and includes a detailed PDF report with all findings and visuals.
 
 📊 Dataset Overview
-Column	Description
+Feature	Description
 Order ID	Unique identifier for each order
 Amount	Total sale amount
 Profit	Profit earned from each order
@@ -15,92 +22,121 @@ Category	Product category (e.g., Furniture, Electronics)
 Sub-Category	Detailed product type
 PaymentMode	Payment method used
 Order Date	Date of transaction
-CustomerName	Name of customer
+CustomerName	Name of the customer
 State / City	Delivery location
 Year-Month	Month and year of transaction
 
-Data Period: March 2020 – March 2025
-Records: 1,194 | Customers: 802 | Categories: 3 | Sub-Categories: 12
+📅 Data Period: March 2020 – March 2025
+🧾 Records: 1,194  👥 Customers: 802  🛍 Categories: 3  📦 Sub-Categories: 12
 
 🧠 Methodology
-1. Exploratory Data Analysis (EDA)
-- Analysed total customers and revenue trends
-- Identified top 10 high-value customers
-- Visualised distribution of revenue and profit margin vs total spend
-- Highlighted skewed revenue concentration among a small elite group
+🔍 1. Exploratory Data Analysis (EDA)
 
-2. Feature Engineering
-- Derived RFM (Recency, Frequency, Monetary) metrics
-- Calculated TotalProfit, Average Order Value (AOV), and Profit Margin
-- Standardised metrics for modelling
+Analysed sales trends by category, time, and location
 
-3. Customer Segmentation
-- Applied RFM quantile scoring (Champions, Loyal, Potential Loyalists, At Risk, Lost)
-- Performed K-Means clustering for deeper behavioural patterns
-- Visualised clusters via PCA for interpretability
+Identified top-value customers and their profit margins
 
-4. CLV Modelling
-- Fitted BG/NBD model for expected repeat purchases (180-day horizon)
-- Integrated Gamma-Gamma model (where applicable) for order value estimation
-- Aggregated CLV results by segment for actionable business insights
+Visualised revenue concentration and customer distribution
 
-5. Insights & Recommendations
-- Prioritised Champions and Loyal Customers for retention investment
-- Identified Potential Loyalists as scalable growth opportunities
-- Recommended low-cost automation for reactivating at-risk segments
+⚙️ 2. Feature Engineering
+
+Constructed RFM (Recency, Frequency, Monetary) metrics
+
+Created derived features: TotalProfit, Average Order Value (AOV), Profit Margin
+
+Standardised features for clustering and modelling
+
+🧩 3. Customer Segmentation
+
+Applied RFM quantile scoring → grouped customers into:
+
+🥇 Champions
+
+💎 Loyal Customers
+
+🌱 Potential Loyalists
+
+⚠️ At Risk
+
+🕳 Lost
+
+Performed K-Means clustering for behavioural segmentation
+
+Used PCA for 2D visualisation of clusters
+
+💵 4. CLV Modelling
+
+Implemented BG/NBD model for predicting repeat purchases
+
+Used Gamma-Gamma model to estimate average order value
+
+Computed expected CLV (180-day horizon) per customer and segment
+
+💬 5. Insights & Recommendations
+
+Identified high-ROI segments (Champions & Loyal)
+
+Flagged at-risk and lost customers for reactivation campaigns
+
+Suggested marketing and retention strategies by segment
 
 📈 Key Results
-Segment	Customers	Avg CLV ($)	Total CLV ($)	Avg Expected Purchases
-Loyal Customers	266	4.13	1,098.78	0.0008
-Potential Loyalists	288	3.11	896.99	0.0006
-Champions	130	5.80	753.59	0.0011
-At Risk	104	2.05	213.17	0.0004
-Lost	14	1.69	23.70	0.0003
+Segment	# Customers	Avg CLV ($)	Total CLV ($)	Avg Expected Purchases
+🥇 Loyal Customers	266	4.13	1,098.78	0.0008
+🌱 Potential Loyalists	288	3.11	896.99	0.0006
+💎 Champions	130	5.80	753.59	0.0011
+⚠️ At Risk	104	2.05	213.17	0.0004
+🕳 Lost	14	1.69	23.70	0.0003
 
-Key Findings:
-- Most customers are single-purchase buyers, limiting short-term CLV.
-- Loyal Customers and Champions drive the largest revenue and CLV contribution.
-- Potential Loyalists are the largest cohort and the best opportunity for scalable growth.
-- High spend ≠ high profit margin, indicating opportunity for margin optimisation.
+Key Findings
 
-📊 Visualisations (Included in Report)
+🧩 Loyal and Champion segments dominate both revenue and future value.
 
-Total Revenue vs Customer Count
+🌱 Potential Loyalists represent scalable growth potential.
 
-Top 10 Customers by Spend
+💰 High-spending customers don’t always yield the highest profit margins, signalling optimisation opportunities.
 
-Revenue Distribution Histogram
+⚡️ The top 20 % of customers drive roughly 65 % of all revenue.
 
-Profit Margin vs Total Spend Scatterplot
+📊 Example Visualisations
 
-Customer Segments by RFM Score
+📈 Revenue Trend Over Time
 
-K-Means Cluster Visualisation (PCA)
+🔥 Top 10 Customers by Total Spend
 
-CLV Distribution by Segment (Boxplot)
+🧮 Revenue Distribution Histogram
+
+💹 Profit Margin vs Total Spend Scatterplot
+
+🎯 RFM Segment Heatmap
+
+🌀 K-Means Cluster Visualisation (PCA)
+
+💰 CLV Distribution by Segment
+
+All visuals are available in the included PDF report.
 
 💡 Business Insights
 
-The top 20% of customers account for a disproportionate share of total revenue.
-
-Retention-focused marketing for Loyal and Champion segments yields the highest ROI.
-
-Automation and targeted incentives can convert Potential Loyalists into repeat buyers.
-
-CLV-based budgeting allows dynamic reallocation of marketing spend toward high-value customers.
+✅ Retention-first strategy: Investing in Loyal and Champion customers delivers the highest ROI.
+🌱 Growth potential: Nurture Potential Loyalists via email campaigns and loyalty programmes.
+⚠️ Reactivation focus: Use targeted offers for At-Risk customers.
+📊 Profitability leverage: Optimise discounts for customers with low margin but high spend.
+🔁 CLV-based budgeting enables smarter marketing spend allocation.
 
 🧰 Tech Stack
-
-Languages & Libraries: Python, Pandas, NumPy, Scikit-learn, Lifetimes, Matplotlib, Seaborn
-Environment: Google Colab
-Report & Versioning: Google Docs → PDF, GitHub
-
+Category	Tools Used
+Languages	Python
+Libraries	Pandas, NumPy, Scikit-learn, Lifetimes, Matplotlib, Seaborn
+Environment	Google Colab
+Version Control	GitHub
+Reporting	PDF Report (in repository)
 🚀 Future Work
 
-Automate the ETL and CLV refresh pipeline (e.g., using Airflow/dbt)
+🧩 Automate ETL and CLV refresh pipeline (e.g., Airflow, dbt)
 
-Extend analysis to churn prediction and campaign attribution
+🧠 Extend analysis to churn prediction and campaign attribution
 
-Integrate marketing and behavioural data for multi-channel CLV modelling
+📈 Integrate marketing and behavioural data for multi-channel CLV models
 
-Deploy CLV updates to a BI dashboard (Tableau/Looker) for real-time tracking
+🖥 Deploy results to a BI dashboard (Tableau / Looker) for live tracking
