@@ -111,4 +111,4 @@ Included in the PDF report:
 - 📈 Integrate **marketing and campaign attribution** data  
 - 🖥 Deploy **interactive BI dashboard (Looker / Tableau)**
 
-🔗 Link to the dataset: https://www.opendatabay.com/data/consumer/7b291337-5fed-470f-a206-0dc899425db4?utm_source=chatgpt.com
+🔗 Link to the dataset: https://www.opendatabay.com/data/consumer/7b291337-5fed-470f-a206-0dc899425db4
